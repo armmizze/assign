@@ -8,11 +8,12 @@
   <ion-content has-header="true" padding="true">
 
     <center>
-    <form action="http://localhost:5000/upload" method="post" enctype="multipart/form-data">
+    <form action="http://boxbox1.herokuapp.com/upload" method="post" enctype="multipart/form-data">
       <input type="hidden" name="box_name" ng-value="friend.name">
 
-      <input type="file" class="custom-file-input" name="image" onchange="javascript:this.form.submit();">
-
+      <input type="file" class="custom-file-input" name="image"
+      onchange="javascript:this.form.submit();">
+      
     </form>
   </center>
 
