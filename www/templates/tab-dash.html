@@ -1,0 +1,25 @@
+<ion-view title="Dashboard">
+  <ion-content class="padding">
+
+  <!--   <div ng-repeat="box in boxs">
+    {{box.box_name}}
+    <img ng-src="{{box.box_item_image.url}}" width="100px"/>
+
+    </div> -->
+
+      <div ng-repeat="box in boxs" class="list card">
+
+
+
+        <div class="item item-image">
+          <img ng-src="{{box.box_item_image.url}}">
+        </div>
+
+        <ion-item class="assertive" type="item-text-wrap" href="#/tab/box/{{friend.id}}">
+          <i class="ion-pinpoint"></i>
+          {{box.box_name}}
+        </ion-item>
+
+      </div>
+  </ion-content>
+</ion-view>

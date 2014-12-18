@@ -1,0 +1,103 @@
+<!-- <html ng-app="App">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.3/angular.min.js"></script>
+        <script src="js/controller.js"></script>
+        <script src="js/service.js"></script>
+    </head>
+    <body ng-controller="AppController">
+
+        <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">username : </label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="inputEmail3" ng-model="user">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">password : </label>
+            <div class="col-sm-4">
+                <input type="password" class="form-control" id="inputEmail3" ng-model="pass" >
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default" ng-click="check(user,pass)">login</button>
+                 <a href="reg.html"><button type="submit" class="btn btn-default" >register</button></a>
+            </div>
+        </div>
+        {{Pro}}
+    </body>
+</html> -->
+
+
+<!doctype html>
+<html class="login-layout" lang="en" ng-app="App">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Sign In - iBoxz</title>
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+  <link href="https://compose.cachefly.net/images/favicon.ico" rel="icon" type="image/x-icon" />
+  <meta content="True" name="HandheldFriendly" />
+  <meta content="320" name="MobileOptimized" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta content="en" http-equiv="content-language" />
+  <meta content="notranslate" name="google" />
+  <link href="https://compose.cachefly.net/stylesheets/megatron.css" rel="stylesheet" type="text/css" />
+  <script src="https://compose.cachefly.net/javascripts/megatron.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.3/angular.min.js"></script>
+  <script src="js/controller.js"></script>
+  <script src="js/service.js"></script>
+
+</head>
+
+<body ng-controller="AppController">
+  <div class="site">
+    <div class="login-page">
+      <header class="login-header">
+        <h1 class="logo-header">
+    <span class="hidden_label">Compose</span>
+    <div class="logo-header-svg">
+      <svg version="1.1"
+      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+      x="0px" y="0px" width="100%" height="150px" viewBox="0 0 250.57 188.212" enable-background="new 0 0 250.57 188.212"
+      xml:space="preserve">
+      <g class="svg-logo">
+
+        Tetromino
+
+        <path class="svg-logo-text" fill="#FFFFFF" d="M144.473,0l-39.068,22.423L66.798,0L27.73,22.423v40.151l78.136,45.311l39.3-22.423l38.606,22.423
+        l39.068-22.423V45.311L144.473,0z M36.514,27.278L66.797,9.941l30.283,17.337L66.797,44.847L36.514,27.278z M105.866,67.734
+        L75.583,50.165l30.283-17.337l30.283,17.337L105.866,67.734z M144.473,45.079l-30.284-17.57l30.283-17.337l30.283,17.337
+        L144.473,45.079z M183.772,67.734l-30.283-17.569l30.283-17.337l30.283,17.337L183.772,67.734z"/>
+      </g>
+          </svg>
+
+  </div>
+</h1>
+      </header>
+
+
+
+      <form accept-charset="UTF-8" class="login-form">
+
+
+        <div style="margin:0;padding:0;display:inline">
+          <input name="utf8" type="hidden" value="&#x2713;" />
+          <input name="authenticity_token" type="hidden" value="25jN1/zkNEOXUZTHN61WoiLMQHU/qwmpt6y7XZG+Bt4=" />
+        </div>
+        <input autocapitalize="off" autocorrect="off" class="login-input autofocus fill" ng-model="user" placeholder="Username" type="text" />
+        <input autocapitalize="off" autocomplete="off" autocorrect="off" class="login-input fill" ng-model="pass" placeholder="Password" size="" type="password" />
+        <button class="x-large primary-btn fill" ng-click="check(user,pass)" type="submit">Sign In</button>
+        <footer class="login-footer">
+
+          <p><a href="reg.html">Create Account</a>
+          </p>
+
+        </footer>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

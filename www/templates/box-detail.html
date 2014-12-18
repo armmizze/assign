@@ -1,0 +1,35 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view title="{{friend.name}}">
+  <ion-content has-header="true" padding="true">
+
+    <center>
+    <form action="http://localhost:5000/upload" method="post" enctype="multipart/form-data">
+      <input type="hidden" name="box_name" ng-value="friend.name">
+
+      <input type="file" class="custom-file-input" name="image" onchange="javascript:this.form.submit();">
+
+    </form>
+  </center>
+
+    <div ng-repeat="box in boxs | filter:friend.name" class="list card">
+
+      <div class="item item-avatar">
+        <img ng-src="{{box.box_item_image.url}}">
+        <h2 class="positive">{{box.box_name}}</h2>
+        <p>{{box.box_item_image.created_at}}</p>
+
+      </div>
+
+      <div class="item item-image">
+        <img ng-src="{{box.box_item_image.url}}">
+      </div>
+
+    </div>
+
+  </ion-content>
+</ion-view>
